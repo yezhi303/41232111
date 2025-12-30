@@ -69,6 +69,22 @@
             margin-bottom: 60px;
             scroll-margin-top: 130px;
         }
+        /* 跑馬燈容器樣式 */
+.marquee-container {
+    width: 100%;
+    background-color: #000; /* 背景設為黑色可襯托鮮豔的鸚鵡圖片 */
+    padding: 10px 0;
+    margin-top: 60px; /* 預留位置給固定在頂部的導覽列 */
+    overflow: hidden;
+}
+
+.marquee-container img {
+    height: 200px; /* 統一高度，讓跑馬燈整齊 */
+    width: auto;   /* 自動調整寬度以維持比例 */
+    margin-right: 20px;
+    border-radius: 8px; /* 圓角效果，與你的 container 風格統一 */
+    border: 2px solid #4caf93; /* 加入綠色邊框呼應主題 */
+}
         h2 {
             color: #2f6f62;
             border-left: 6px solid #4caf93;
@@ -107,6 +123,16 @@
     </ul>
 </div>
 
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+        <img src="img/1.jpg" alt="鸚鵡棲息地背景">
+        <img src="img/2.jpg" alt="和尚鸚鵡特寫">
+        <img src="img/3.jpg" alt="玄鳳鸚鵡特寫">
+        <img src="img/01.jpg" alt="金剛鸚鵡特寫">
+        <img src="img/id範例.jpg" alt="範例圖">
+    </marquee>
+</div>
+    
 <div class="container">
     <section id="home">
         <h2>什麼是鸚鵡？</h2>
