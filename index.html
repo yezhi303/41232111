@@ -69,22 +69,39 @@
             margin-bottom: 60px;
             scroll-margin-top: 130px;
         }
-        /* 跑馬燈容器樣式 */
-.marquee-container {
-    width: 100%;
-    background-color: #000; /* 背景設為黑色可襯托鮮豔的鸚鵡圖片 */
-    padding: 10px 0;
-    margin-top: 60px; /* 預留位置給固定在頂部的導覽列 */
-    overflow: hidden;
-}
+      /* 跑馬燈容器樣式 */
+        .marquee-container {
+            width: 100%;
+            background-color: #000; 
+            padding: 20px 0;
+            margin-top: 60px; /* 避開固定導覽列 */
+            overflow: hidden;
+        }
+        .marquee-container img {
+            height: 1000px; /* 高度增加 5 倍 */
+            width: auto;    
+            margin-right: 30px;
+            border-radius: 15px;
+            border: 4px solid #4caf93;
+            transition: transform 0.3s ease;
+        }
+        .marquee-container img:hover {
+            transform: scale(1.02);
+        }
 
-.marquee-container img {
-    height: 200px; /* 統一高度，讓跑馬燈整齊 */
-    width: auto;   /* 自動調整寬度以維持比例 */
-    margin-right: 20px;
-    border-radius: 8px; /* 圓角效果，與你的 container 風格統一 */
-    border: 2px solid #4caf93; /* 加入綠色邊框呼應主題 */
-}
+        /* 主容器 */
+        .container {
+            width: 85%;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        section {
+            margin-bottom: 80px;
+            scroll-margin-top: 100px;
+        }
         h2 {
             color: #2f6f62;
             border-left: 6px solid #4caf93;
@@ -124,7 +141,7 @@
 </div>
 
 <div class="marquee-container">
-    <marquee behavior="scroll" direction="left" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+    <marquee behavior="scroll" direction="left" scrollamount="12" onmouseover="this.stop()" onmouseout="this.start()">
         <img src="img/1.jpg" alt="鸚鵡棲息地背景">
         <img src="img/2.jpg" alt="和尚鸚鵡特寫">
         <img src="img/3.jpg" alt="玄鳳鸚鵡特寫">
