@@ -3,73 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <title>鸚鵡介紹</title>
+
     <style>
         body {
             font-family: Arial, "微軟正黑體", sans-serif;
-            background-color: #e6f2ee; /* 清淡墨綠色 */
+            background-color: #e6f2ee;
             margin: 0;
             padding: 0;
         }
-        header {
+
+        /* 導覽列 */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
             background-color: #38795eb6;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-sizing: border-box;
+            z-index: 1000;
         }
+
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* 主內容 */
         .container {
             width: 80%;
-            margin: 30px auto;
+            margin: 120px auto 30px auto; /* 避開 fixed 導覽列 */
             background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
+            padding: 25px;
+            border-radius: 10px;
         }
+
         h2 {
             color: #2f6f62;
+            border-left: 6px solid #4caf93;
+            padding-left: 10px;
         }
-        p {
+
+        p, ul {
             line-height: 1.8;
             color: #333;
         }
-        ul {
-            line-height: 1.8;
-        }
+
         footer {
             text-align: center;
-            padding: 15px;
+            padding: 20px;
             color: #666;
             font-size: 14px;
+            background-color: #f2f2f2;
+        }
+
+        footer a {
+            color: #2f6f62;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>鸚鵡介紹</h1>
-        <p>聰明又多彩的鳥類朋友</p>
-    </header>
-    <div class="container">
-        <h2>什麼是鸚鵡？</h2>
-        <p>
-            鸚鵡是一種以鮮豔羽毛和高智慧聞名的鳥類，
-            分布於熱帶與亞熱帶地區。牠們具有強壯的喙，
-            能輕鬆啃咬堅硬的果實與種子。
-        </p>
-        <h2>鸚鵡的特色</h2>
-        <ul>
-            <li>顏色豐富，外觀吸睛</li>
-            <li>學習能力強，能模仿聲音</li>
-            <li>社交性高，喜歡與同伴互動</li>
-            <li>壽命較長，有些品種可活數十年</li>
-        </ul>
-        <h2>常見的鸚鵡種類</h2>
-        <p>
-            常見的鸚鵡包括虎皮鸚鵡、玄鳳鸚鵡、金剛鸚鵡與和尚鸚鵡等，
-            不同種類在體型、個性與飼養需求上皆有所不同。
-        </p>
-    </div>
-    <footer>
-        © 鸚俊威鵡<br>聯絡我們<br>IG:ying_wu1141229
-    </footer>
+
+<!-- 導覽列 -->
+<div class="navbar">
+    <div class="logo">鸚俊威鵡</div>
+
+    <ul class="nav-links">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">鸚鵡歷史</a></li>
+        <li><a href="#">圖像專區</a></li>
+        <li><a href="#">聯絡我們</a></li>
+    </ul>
+</div>
+
+<!-- 內容區 -->
+<div class="container">
+    <h2>什麼是鸚鵡？</h2>
+    <p>
+        鸚鵡是一種以鮮豔羽毛和高智慧聞名的鳥類，
+        分布於熱帶與亞熱帶地區。牠們具有強壯的喙，
+        能輕鬆啃咬堅硬的果實與種子。
+    </p>
+
+    <h2>鸚鵡的特色</h2>
+    <ul>
+        <li>顏色豐富，外觀吸睛</li>
+        <li>學習能力強，能模仿聲音</li>
+        <li>社交性高，喜歡與同伴互動</li>
+        <li>壽命較長，有些品種可活數十年</li>
+    </ul>
+
+    <h2>常見的鸚鵡種類</h2>
+    <p>
+        常見的鸚鵡包括虎皮鸚鵡、玄鳳鸚鵡、金剛鸚鵡與和尚鸚鵡等，
+        不同種類在體型、個性與飼養需求上皆有所不同。
+    </p>
+</div>
+
+<footer>
+    © 鸚俊威鵡<br>
+    聯絡我們<br>
+    IG：<a href="https://www.instagram.com/ying_wu1141229" target="_blank">
+        ying_wu1141229
+    </a>
+</footer>
 
 </body>
 </html>
