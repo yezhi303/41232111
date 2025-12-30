@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <title>鸚鵡介紹</title>
     <style>
-        /* 為了讓捲動更流暢，我在這裡加入了一行平滑捲動的語法 */
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
             font-family: Arial, "微軟正黑體", sans-serif;
             background-color: #e6f2ee;
@@ -72,8 +67,7 @@
         }
         section {
             margin-bottom: 60px;
-            /* 這個屬性可以防止導覽列擋住標題 */
-            scroll-margin-top: 130px; 
+            scroll-margin-top: 130px;
         }
         h2 {
             color: #2f6f62;
@@ -103,18 +97,16 @@
 </head>
 
 <body>
-    <header>
 <div class="navbar">
     <div class="logo">鸚俊威鵡</div>
-    <nav>
-        <a href="#home">首頁</a></li>
-        <a href="#history">鸚鵡歷史</a></li>
-        <a href="#gallery">圖像專區</a></li>
-        <a href="#contact">聯絡我們</a></li>
-    </nav>
-    </header>
+    <ul class="nav-links">
+        <li><a href="#home">首頁</a></li>
+        <li><a href="#history">鸚鵡歷史</a></li>
+        <li><a href="#gallery">圖像專區</a></li>
+        <li><a href="#contact">聯絡我們</a></li>
+    </ul>
+</div>
 
-<!-- 首頁 -->    
 <div class="container">
     <section id="home">
         <h2>什麼是鸚鵡？</h2>
@@ -123,8 +115,6 @@
             分布於熱帶與亞熱帶地區。牠們具有強壯的喙，
             能輕鬆啃咬堅硬的果實與種子。
         </p>
-</div>
-    <!-- 鸚鵡歷史 -->
     </section>
 
     <section id="history">
