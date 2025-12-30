@@ -1,103 +1,105 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-<meta charset="UTF-8">
-<title>鸚鵡介紹</title>
-<style>
-body {
-    font-family: Arial, "微軟正黑體", sans-serif;
-    background-color: #e6f2ee;
-    margin: 0;
-    padding: 0;
-}
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #38795eb6;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-    box-sizing: border-box;
-    z-index: 1000;
-}
-.logo {
-    color: white;
-    font-size: 22px;
-    font-weight: bold;
-}
-.nav-links {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-.nav-links li {
-    margin-left: 30px;
-}
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    position: relative;
-    padding-bottom: 5px;
-}
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3s ease;
-}
-.nav-links a:hover::after {
-    left: 0;
-    width: 100%;
-}
-.container {
-    width: 80%;
-    margin: 130px auto 30px auto;
-    background-color: #ffffff;
-    padding: 25px;
-    border-radius: 10px;
-}
-section {
-    margin-bottom: 60px;
-    scroll-margin-top: 130px;
-}
-h2 {
-    color: #2f6f62;
-    border-left: 6px solid #4caf93;
-    padding-left: 10px;
-}
-h3 {
-    color: #38795e;
-    margin-top: 25px;
-}
-p, ul {
-    line-height: 1.8;
-    color: #333;
-}
-footer {
-    background-color: #e0ece8;
-    text-align: center;
-    padding: 12px 0;
-    color: #666;
-    font-size: 14px;
-    border-top: 1px solid #c9dcd6;
-}
-footer a {
-    color: #2f6f62;
-    text-decoration: none;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-</style>
+    <meta charset="UTF-8">
+    <title>鸚鵡介紹</title>
+    <style>
+        /* 為了讓捲動更流暢，我在這裡加入了一行平滑捲動的語法 */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, "微軟正黑體", sans-serif;
+            background-color: #e6f2ee;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #38795eb6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+        .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-links li {
+            margin-left: 30px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        .nav-links a:hover::after {
+            left: 0;
+            width: 100%;
+        }
+        .container {
+            width: 80%;
+            margin: 130px auto 30px auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 60px;
+            /* 這個屬性可以防止導覽列擋住標題 */
+            scroll-margin-top: 130px; 
+        }
+        h2 {
+            color: #2f6f62;
+            border-left: 6px solid #4caf93;
+            padding-left: 10px;
+        }
+        p, ul {
+            line-height: 1.8;
+            color: #333;
+        }
+        footer {
+            background-color: #e0ece8;
+            text-align: center;
+            padding: 12px 0;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #c9dcd6;
+        }
+        footer a {
+            color: #2f6f62;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
@@ -112,81 +114,62 @@ footer a:hover {
 </div>
 
 <div class="container">
-<section id="home">
-<h2>什麼是鸚鵡？</h2>
-<p>
-鸚鵡是一種以鮮豔羽毛和高智慧聞名的鳥類，
-分布於熱帶與亞熱帶地區。牠們具有強壯的喙，
-能輕鬆啃咬堅硬的果實與種子。
-</p>
-</section>
+    <section id="home">
+        <h2>什麼是鸚鵡？</h2>
+        <p>
+            鸚鵡是一種以鮮豔羽毛和高智慧聞名的鳥類，
+            分布於熱帶與亞熱帶地區。牠們具有強壯的喙，
+            能輕鬆啃咬堅硬的果實與種子。
+        </p>
+    </section>
 
-<section id="history">
-<h2>鸚鵡的歷史</h2>
+    <section id="history">
+        <h2>鸚鵡的歷史</h2>
+        <p>
+            鸚鵡與人類的互動歷史可追溯至數千年前，
+            在古埃及、古羅馬與亞洲文化中，
+            常被視為智慧、溝通與吉祥的象徵。
+        </p>
+        <p>
+            大航海時代後，鸚鵡隨著探險家被帶往世界各地，
+            鮮豔的羽色與模仿聲音的能力使牠們迅速受到喜愛。
+        </p>
+        <p>
+            現代社會則更加重視鸚鵡的生態保育，
+            強調尊重生命與負責任的飼養觀念。
+        </p>
+    </section>
 
-<h3>一、鸚鵡的起源</h3>
-<p>
-研究顯示，鸚鵡的祖先可追溯至數千萬年前，
-最早出現在熱帶森林環境中。
-牠們為了適應樹棲生活，逐漸演化出彎曲而有力的喙，
-以及適合抓握樹枝的腳趾結構。
-</p>
+    <section id="gallery">
+        <h2>圖像專區</h2>
+        <p>
+            本區將展示各種鸚鵡的圖像與視覺素材，
+            包含不同品種、羽色與姿態的鸚鵡照片或插畫。
+        </p>
+        <p>
+            未來可加入圖片展示、圖庫分類或互動式瀏覽功能，
+            提供使用者更完整的視覺體驗。
+        </p>
+    </section>
 
-<h3>二、古代文明中的鸚鵡</h3>
-<p>
-在古埃及、古羅馬與亞洲地區，
-鸚鵡因羽色鮮豔與能模仿人聲，
-常被視為智慧、溝通與吉祥的象徵，
-並成為貴族或王室的珍貴寵物。
-</p>
-
-<h3>三、大航海時代的傳播</h3>
-<p>
-進入大航海時代後，
-歐洲探險家將鸚鵡帶往世界各地，
-牠們逐漸在歐洲社會中流行，
-也讓不同品種的鸚鵡被人類廣泛認識。
-</p>
-
-<h3>四、現代的飼養與保育</h3>
-<p>
-現代社會更加重視鸚鵡的動物福利與生態保育。
-由於棲地破壞與非法捕捉，
-部分鸚鵡品種面臨生存威脅，
-因此提倡合法飼養與保護自然棲地已成為重要議題。
-</p>
-</section>
-
-<section id="gallery">
-<h2>圖像專區</h2>
-<p>
-本區將展示各種鸚鵡的圖像與視覺素材，
-包含不同品種、羽色與姿態的鸚鵡照片或插畫。
-</p>
-<p>
-未來可加入圖片展示、圖庫分類或互動式瀏覽功能，
-提供使用者更完整的視覺體驗。
-</p>
-</section>
-
-<section id="contact">
-<h2>聯絡我們</h2>
-<p>© 鸚俊威鵡</p>
-<p>
-IG：
-<a href="https://www.instagram.com/ying_wu1141229" target="_blank">
-ying_wu1141229
-</a>
-</p>
-</section>
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <p>© 鸚俊威鵡</p>
+        <p>
+            IG：
+            <a href="https://www.instagram.com/ying_wu1141229" target="_blank">
+                ying_wu1141229
+            </a>
+        </p>
+    </section>
 </div>
 
 <footer>
-© 鸚俊威鵡<br>
-IG：
-<a href="https://www.instagram.com/ying_wu1141229" target="_blank">
-ying_wu1141229
-</a>
+    © 鸚俊威鵡<br>
+    IG：
+    <a href="https://www.instagram.com/ying_wu1141229" target="_blank">
+        ying_wu1141229
+    </a>
 </footer>
 </body>
 </html>
